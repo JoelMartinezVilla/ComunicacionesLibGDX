@@ -15,7 +15,7 @@ public class GameScreen implements Screen {
         int port = 8888;
 
         try {
-            socket = WebSockets.newSocket(WebSockets.toWebSocketUrl(address, port));
+            socket = WebSockets.newSocket(WebSockets.toWebSocketUrl("10.0.0.2", port));
             socket.setSendGracefully(false);
             socket.addListener(new MyWSListener());
             socket.connect();

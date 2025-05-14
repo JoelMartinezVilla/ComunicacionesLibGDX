@@ -19,8 +19,8 @@ gwt {
   minHeapSize = '1G'
 
   src = files(file('src/main/java')) // Needs to be in front of "modules" below.
-  modules 'com.danielJuarez.GdxDefinition'
-  devModules 'com.danielJuarez.GdxDefinitionSuperdev'
+  modules 'com.joelMartinez.GdxDefinition'
+  devModules 'com.joelMartinez.GdxDefinitionSuperdev'
   project.webAppDirName = 'webapp'
 
   compiler.strict = true
